@@ -1,0 +1,12 @@
+[Unit]
+Description=File Browser Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=filebrowser
+
+[Install]
+WantedBy=multi-user.target
